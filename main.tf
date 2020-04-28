@@ -1,4 +1,4 @@
-provider "azurerm" {
+provider "serviceprincipal" {
   version = "~> 2.7.0"
   features {}
 }

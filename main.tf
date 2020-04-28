@@ -1,6 +1,7 @@
-
-features {}
-
+provider "azurerm" {
+  version = "~> 2.7.0"
+  features {}
+}
 resource "azurerm_resource_group" "tryit" {
     name = "tryitresourcegroup"
     location ="eastus"

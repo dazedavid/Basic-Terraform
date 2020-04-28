@@ -1,4 +1,4 @@
-provider "serviceprincipal" {
+provider "random" {
   version = "~> 2.7.0"
   features {}
 }

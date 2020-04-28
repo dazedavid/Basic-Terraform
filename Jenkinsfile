@@ -22,7 +22,6 @@ pipeline {
                  
                       sh 'terraform init'
                       sh 'terraform plan -out "check.out"'
-                      sh 'terraform apply "check.out"'
                   }   
             }      
          }

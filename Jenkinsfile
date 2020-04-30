@@ -18,7 +18,7 @@ pipeline {
       }   
       stage ('Provisioning Infrastructure'){
          steps {
-            azureServicePrincipal(credentialsId: 'azurelogin',
+           withCredentials([azureServicePrincipal(credentialsId: 'azurelogin',
                                                        subscriptionIdVariable: '8df92471-3d44-4acb-b904-9bc3eb1ae550',
                                                        clientIdVariable: 'b7568031-a099-4eff-9702-d2dddcdc060c',
                                                        clientSecretVariable: '-cifAqfeoPCCcV0eQiu=.bCjQWx]k862',
